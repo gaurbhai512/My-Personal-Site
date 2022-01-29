@@ -1,0 +1,305 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap'); */
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background-image: url("./images/blue-snow.png");
+}
+
+.content {
+  background-color: white;
+  border-radius: 25px;
+  position: relative;
+  margin: auto;
+  margin-top: 100px;
+  padding: 50px;
+  height: auto;
+  width: 80%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  scroll-margin-top: 170px;
+}
+
+.content:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+#home {
+  display: flex;
+  margin-top: 250px;
+}
+
+.content img {
+  height: 350px;
+  width: 350px;
+  margin-top: 30px;
+  margin-left: 135px;
+  border: #24a19c solid;
+  border-width: 5px;
+  padding: 15px;
+  border-radius: 25px;
+  z-index: 1;
+}
+
+.content p {
+  /* position: relative; */
+  top: 100px;
+  display: flex;
+  justify-content: left;
+  font-size: 1.5rem;
+  overflow-wrap: break-word;
+  width: 50%;
+  margin-top: 90px;
+}
+
+.container {
+  background-color: #24a19c;
+  height: 100px;
+  padding: 28px 50px;
+  display: flex;
+  justify-content: right;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 95%;
+  z-index: 100;
+}
+
+.writer {
+  font-size: 2rem;
+  color: white;
+  margin-right: auto;
+  margin-top: 15px;
+}
+
+nav {
+  padding: 25px;
+}
+
+nav a {
+  text-decoration: none;
+  position: relative;
+  color: white;
+  letter-spacing: 0.5px;
+  margin-left: 50px;
+  margin-top: 100px;
+}
+
+nav a:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 3px;
+  left: 0;
+  top: 30px;
+  background-color: white;
+  transition: 0.3s;
+}
+
+nav a:hover:after {
+  width: 100%;
+}
+
+h1 {
+  color: #24a19c;
+  font-weight: 1000;
+  position: absolute;
+  margin: 10px 0;
+  font-size: 50px;
+  top: 30px;
+}
+
+h1:hover:after {
+  width: 100%;
+}
+
+h1:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 3px;
+  left: 0;
+  background-color: #24a19c;
+  top: 57px;
+  transition: 0.3s;
+}
+
+footer {
+  position: relative;
+  background-color: #24a19c;
+  height: 100px;
+  padding: 50px;
+  display: flex;
+  margin-top: 50px;
+}
+
+.footer {
+  display: block;
+  width: 25%;
+  position: relative;
+}
+
+.footer i {
+  color: white;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+}
+
+.footer p {
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 150px;
+  padding: 20px 0;
+}
+
+.footer p:after {
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 0;
+  left: 0;
+  top: 80%;
+  background-color: white;
+  transition: 0.3s;
+}
+
+.footer p:hover:after {
+  width: 100%;
+}
+
+.hobbyimage {
+  margin: 85px 0;
+}
+
+.hobbydiv {
+  background-image: none;
+  background-size: 100%;
+  display: flex;
+}
+.hobbydiv img {
+  position: relative;
+  margin-left: 20px;
+  height: 200px;
+  width: 80%;
+  border: none;
+}
+
+.gridContainer {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
+
+.gridContainer h1 {
+  left: 54px;
+}
+
+.hobbytitle {
+  margin-top: -107px;
+}
+
+.hobbytitle p {
+  margin-left: 30%;
+}
+
+.skilldiv {
+  position: relative;
+  margin-top: 0;
+}
+
+.skilldiv1 {
+  position: relative;
+  margin-top: 50px;
+}
+
+.skilldiv1 img {
+  height: 80px;
+  width: 80px;
+  border: none;
+  padding-top: 0;
+  margin-top: 0;
+}
+
+.skilldiv1 p {
+  position: absolute;
+  top: -85px;
+  line-height: 70px;
+  left: 30%;
+}
+
+.skilldiv1 p:after {
+  content: "";
+  position: absolute;
+  height: 10px;
+  width: 65%;
+  left: 150px;
+  top: 43%;
+  background-color: #24a19c;
+}
+
+.skilldiv img {
+  height: 80px;
+  width: 80px;
+  border: none;
+  padding-top: 0;
+  margin-top: 0;
+}
+
+.skilldiv p {
+  position: absolute;
+  top: -85px;
+  line-height: 70px;
+  left: 30%;
+}
+
+#skills {
+  padding-bottom: 0;
+}
+
+.C:after {
+  content: "";
+  position: absolute;
+  height: 10px;
+  width: 70%;
+  left: 150px;
+  top: 43%;
+  background-color: #24a19c;
+}
+
+.js:after {
+  content: "";
+  position: absolute;
+  height: 10px;
+  width: 67%;
+  left: 150px;
+  top: 43%;
+  background-color: #24a19c;
+}
+
+.react:after {
+  content: "";
+  position: absolute;
+  height: 10px;
+  width: 55%;
+  left: 150px;
+  top: 43%;
+  background-color: #24a19c;
+}
+
+.mongo:after {
+  content: "";
+  position: absolute;
+  height: 10px;
+  width: 60%;
+  left: 150px;
+  top: 43%;
+  background-color: #24a19c;
+}
